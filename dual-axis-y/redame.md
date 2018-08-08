@@ -1,0 +1,3 @@
+This is a follow on from the [dual line d3.js graph](http://bl.ocks.org/d3noob/8603837) used as an example in the book [D3 Tips and Tricks](https://leanpub.com/D3-Tips-and-Tricks).
+
+It demonstrates the use of dual y axes to represent two different graph lines and should be taken in context with the text of the [book](https://leanpub.com/D3-Tips-and-Tricks) which can be downloaded for free from Leanpub.
