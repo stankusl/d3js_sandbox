@@ -1,37 +1,38 @@
 // D3 implementation
-var bardata = [20,30,45,15, 22, 33, 99];
-var height = 400,
+let bardata = [20,30,45,15, 22, 33, 99];
+let height = 400,
     width = 300,
     barWidth = 50,
     barOffset = 5;
 
-var yScale = d3.scaleLinear().domain([0, d3.max(bardata)]).range([0, height]);
+let yScale = d3.scaleLinear().domain([0, d3.max(bardata)]).range([0, height]);
 
-var xScale = d3.scaleBand().domain(bardata).paddingInner(.2).paddingOuter(.1).range([0, width]);
+let xScale = d3.scaleBand().domain(bardata).paddingInner(.2).paddingOuter(.1).range([0, width]);
 
-var colorScale = d3.scaleLinear().domain([ 0, d3.max(bardata) ]).range(['#FFB832', '#C61C6F']);
+let colorScale = d3.scaleLinear().domain([ 0, d3.max(bardata) ]).range(['#FFB832', '#C61C6F']);
 
-var yAxisValues = d3.scaleLinear().domain([ 0, d3.max(bardata) ]).range([height, 0]);
-var yAxisTicks = d3.axisLeft(yAxisValues).ticks(10);
+let yAxisValues = d3.scaleLinear().domain([ 0, d3.max(bardata) ]).range([height, 0]);
+let yAxisTicks = d3.axisLeft(yAxisValues).ticks(10);
 
 
 
-var tooltip = d3.select('body')
+let tooltip = d3.select('body')
                 .append('div')
                 .style('position', 'absolute')
                 .style('padding', '0 10px')
                 .style('backgorund', '#ccc')
-                .style('opacity', 0)
+                .style('opacity', 0);
 
 
 // This is step 1
-var myChart = d3.select('#viz').append('svg')
+let myChart = d3.select('#viz').append('svg')
     .attr('wdith', width)
     .attr('height', height)
     .style('background', '#C9D7D6')
     .append('g')
     .selectAll('rect').data(bardata)
-        .enter().append('rect')
+        .enter()
+        .append('rect')
         .style('fill', function(d) {
             return colorScale(d);
         })
