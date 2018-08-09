@@ -50,11 +50,16 @@ let chart = d3.json('cadence-data.json').then(data => {
         
 
         // CONTRIBUTORS
-        let contributorsScale = d3.scaleLinear().range([height, 0]);
+        let contributorsScale = d3.scaleBand().range([height, 0]);
         // define the 1st line
-        let contributorsLine = d3.line()
-            .x(function(d) { return timeScale(d.date); })
-            .y(function(d) { return contributorsScale(d.contributors); });
+
+
+        let contributorsBands = d3.band().domain(data);
+
+            // d3.line()
+            // .x(function(d) { return timeScale(d.date); })
+            // .y(function(d) { return contributorsScale(d.contributors); });
+
 
 
 
@@ -75,10 +80,10 @@ let chart = d3.json('cadence-data.json').then(data => {
         // ADDING VALUE STORY POINTS
         storyPointsScale.domain([0, d3.max(data, function(d) {return Math.max(d.storyPointsCompleted); })]);
 
-        svg.append("path")
-            .data([data])
-            .attr("class", "line")
-            .attr("d", contributorsLine);
+        // svg.append("path")
+        //     .data([data])
+        //     .attr("class", "line")
+        //     .attr("d", contributorsLine);
 
         svg.append("path")
             .data([data])
