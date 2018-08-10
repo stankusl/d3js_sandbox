@@ -1,49 +1,49 @@
 [
   {
     "date": "2018-01-01T00:00:00.000Z",
-    "contributors": 3,
+    "contributors": 4,
     "storyPointsCommited": 50,
-    "storyPointsCompleted": 4
+    "storyPointsCompleted": 30
   },
   {
     "date": "2018-01-02T00:00:00.000Z",
-    "contributors": 3,
+    "contributors": 2,
     "storyPointsCommited": 50,
-    "storyPointsCompleted": 8
+    "storyPointsCompleted": 22
   },
   {
     "date": "2018-01-03T00:00:00.000Z",
     "contributors": 3,
-    "storyPointsCommited": 50,
-    "storyPointsCompleted": 5
+    "storyPointsCommited": 3,
+    "storyPointsCompleted": 33
   },
   {
     "date": "2018-01-04T00:00:00.000Z",
     "contributors": 3,
     "storyPointsCommited": 50,
-    "storyPointsCompleted": 3
+    "storyPointsCompleted": 33
   },
   {
     "date": "2018-01-05T00:00:00.000Z",
-    "contributors": 3,
+    "contributors": 2,
     "storyPointsCommited": 50,
-    "storyPointsCompleted": 5
+    "storyPointsCompleted": 33
   },
   {
     "date": "2018-01-06T00:00:00.000Z",
-    "contributors": 3,
+    "contributors": 20,
     "storyPointsCommited": 50,
-    "storyPointsCompleted": 8
+    "storyPointsCompleted": 33
   },
   {
     "date": "2018-01-07T00:00:00.000Z",
     "contributors": 3,
     "storyPointsCommited": 50,
-    "storyPointsCompleted": 40
+    "storyPointsCompleted": 33
   },
   {
     "date": "2018-01-08T00:00:00.000Z",
-    "contributors": 3,
+    "contributors": 1,
     "storyPointsCommited": 20,
     "storyPointsCompleted": 14
   },
@@ -51,31 +51,31 @@
     "date": "2018-01-09T00:00:00.000Z",
     "contributors": 3,
     "storyPointsCommited": 20,
-    "storyPointsCompleted": 0
+    "storyPointsCompleted": 40
   },
   {
     "date": "2018-01-10T00:00:00.000Z",
     "contributors": 2,
     "storyPointsCommited": 20,
-    "storyPointsCompleted": 0
+    "storyPointsCompleted": 19
   },
   {
     "date": "2018-01-11T00:00:00.000Z",
     "contributors": 2,
     "storyPointsCommited": 20,
-    "storyPointsCompleted": 14
+    "storyPointsCompleted": 40
   },
   {
     "date": "2018-01-12T00:00:00.000Z",
     "contributors": 2,
     "storyPointsCommited": 20,
-    "storyPointsCompleted": 3
+    "storyPointsCompleted": 32
   },
   {
     "date": "2018-01-13T00:00:00.000Z",
     "contributors": 2,
     "storyPointsCommited": 20,
-    "storyPointsCompleted": 7
+    "storyPointsCompleted": 11
   },
   {
     "date": "2018-01-14T00:00:00.000Z",
