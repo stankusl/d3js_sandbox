@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Block Diagram</title>
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<script>
+    var data;
+    var svg;
+    var canvas;
+    d3.json("./data.json", function(error, json) {
+        if (error) return console.warn(error);
+        data = json;
+        main();
+    });
+    function redraw() {
+        var translation = d3.event.translate,
+            newx        = translation[0],
+            newy        = translation[1];
+        canvas.attr("transform",
+            "translate(" + newx + "," + newy + ") " +
+            "scale(" + d3.event.scale + ")");
+    }
+    function main() {
+        svg = d3.select("body").append("svg")
+            .attr("width", data["canvasSize"][0])
+            .attr("height", data["canvasSize"][1]);
+        canvas = svg.append("g")
+            .attr("class", "canvas");
+        svg.call(d3.behavior.zoom()
+            .scaleExtent([1.0/5.0,5.0])
+            .on("zoom", redraw));
+        canvas.selectAll("rect")
+            .data(data["simpleBoxes"])
+            .enter()
+            .append("rect")
+            .attr("x",      function(d, i) {return d[0]})
+            .attr("y",      function(d, i) {return d[1]})
+            .attr("width",  function(d, i) {return d[2]})
+            .attr("height", function(d, i) {return d[3]})
+            .attr("fill",   function(d, i) {return d3.hsl(d[4][0],d[4][1],d[4][2])})
+            .attr("stroke", "black")
+            .attr("stroke-width", 2);
+    }
+</script>
+</body>
+</html>

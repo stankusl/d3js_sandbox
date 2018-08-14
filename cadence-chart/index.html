@@ -1,40 +1,39 @@
 <html>
 
-    <head>
-        <title>Cadence Widget</title>
-        <style>
+<head>
+    <title>Cadence Widget</title>
+    <style>
+        .bar-contributors {
+            fill: #1276c5;
+        }
 
-            .bar-contributors {
-                fill: #1276c5;
-            }
+        .line {
+            fill: none;
+            stroke: #f26c52;
+            stroke-width: 4px;
+        }
 
-            .line {
-                fill: none;
-                stroke: #f26c52;
-                stroke-width: 4px;
-            }
+        .axisSteelBlue text {
+            fill: steelblue;
+        }
 
-            .axisSteelBlue text{
-                fill: steelblue;
-            }
+        .axisRed {
+            margin-left: 30px !important;
+        }
 
-            .axisRed {
-                margin-left: 30px !important;
-            }
-
-            .axisRed text{
-                fill: #f26c52;
-            }
-        </style>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    </head>
+        .axisRed text {
+            fill: #f26c52;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+</head>
 
 
-    <body>
-        
-        <div id="cadence"></div>
+<body>
 
-        <script type="text/javascript" src="d3.cadence.implementation.js"></script>
-    </body>
+<div id="cadence"></div>
+
+<script type="text/javascript" src="d3.cadence.implementation.js"></script>
+</body>
 
 </html>
