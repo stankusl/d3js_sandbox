@@ -82,5 +82,11 @@
     "contributors": 1,
     "storyPointsCommited": 20,
     "storyPointsCompleted": 3
+  },
+  {
+    "date": "2018-01-15T00:00:00.000Z",
+    "contributors": 0,
+    "storyPointsCommited": 99,
+    "storyPointsCompleted": 99
   }
 ]
